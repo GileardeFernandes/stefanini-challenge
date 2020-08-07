@@ -53,8 +53,59 @@ namespace webapi.Controllers
       }
     }
 
+  [HttpPut]
+  [Route("")]
+    public async Task<ActionResult> Put(
+      [FromServices] DataContext context, 
+      [FromBody] People model,
+      [FromQuery]int id
+    )
+    {
+        try
+        {
+          
+           model.Id = id;
+           context.People.Update(model);
+           await context.SaveChangesAsync();   
+           return Ok();
+          
+        }
+        catch (System.Exception e)
+        {
+            
+            return BadRequest(e.Message);
+        }
+      }
 
 
+  [HttpDelete]
+  [Route("")]
+    public async Task<ActionResult> Delete(
+      [FromServices] DataContext context, 
+      [FromQuery]int id
+    )
+    {
+        try
+        {
+      
+           var people = await context.People.FindAsync(id);
+
+           if(people == null)
+              return BadRequest("Id de usuário não existe");
+
+           context.People.Remove(people);   
+           await context.SaveChangesAsync();   
+           return Ok();
+          
+        }
+        catch (System.Exception e)
+        {
+            
+            return BadRequest(e.Message);
+        }
+      }
+     
+    
 
 
 

@@ -24,3 +24,19 @@ html {
 .text-nav {
   color: var( --color-title-in-primary) !important;
 }
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-bar > button{
+  padding: 10px;
+  padding: 0 20px 0 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background: #0295fe;
+  color:#fff;
+}

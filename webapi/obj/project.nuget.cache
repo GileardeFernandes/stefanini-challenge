@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QBXGWiJBr9r+VsQmwrR/q0PgPNb7nhamgAwKtnqkA0XFAvX1b9O8zuY4Q4cu6YYIQocft83NWJGBS8kLKy+w2w==",
+  "dgSpecHash": "65PdCO+hwkjeplKtga9GkjSajYHfqdiuGA7RGrRugk7KjfXe9w0hfJWEIGAdab2NvwLbPh8lI+yk4yZ7OuQE7Q==",
   "success": true,
-  "projectFilePath": "/home/micaelfernandes/estudos/project/challenge-stefanini/webapi/webapi.csproj",
+  "projectFilePath": "/home/micaelfernandes/estudos/project/stefanini-challenge/webapi/webapi.csproj",
   "expectedPackageFiles": [
     "/home/micaelfernandes/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/micaelfernandes/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

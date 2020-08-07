@@ -38,7 +38,8 @@ namespace webapi
                                         builder =>
                                         {
                                     builder.WithOrigins("https://localhost:5002")
-                                    .AllowAnyHeader();
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
                                 });
             });
             

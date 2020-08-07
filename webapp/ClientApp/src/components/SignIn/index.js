@@ -13,7 +13,8 @@ export class SignIn extends Component {
   handleLogin(event) {
     event.preventDefault();
     api.get('v1/users', {  params: { email: this.state.email, password: this.state.password}})  
-       .then(response => {           
+       .then(response => {     
+              localStorage.setItem('@email',this.state.email);
               this.props.history.push('/dashboard'); })
        .catch(x => {
             console.log(x);
@@ -22,7 +23,7 @@ export class SignIn extends Component {
   }
   render() {
     return (
-      <div className="container-register">
+      <div className="container-register-signin">
 
         <img src={signUpAnimation} className="logo" alt="SignIn" />
   

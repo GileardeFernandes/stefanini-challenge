@@ -668,11 +668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/micaelfernandes/estudos/project/challenge-stefanini/webapi/webapi.csproj",
+      "projectUniqueName": "/home/micaelfernandes/estudos/project/stefanini-challenge/webapi/webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "/home/micaelfernandes/estudos/project/challenge-stefanini/webapi/webapi.csproj",
+      "projectPath": "/home/micaelfernandes/estudos/project/stefanini-challenge/webapi/webapi.csproj",
       "packagesPath": "/home/micaelfernandes/.nuget/packages/",
-      "outputPath": "/home/micaelfernandes/estudos/project/challenge-stefanini/webapi/obj/",
+      "outputPath": "/home/micaelfernandes/estudos/project/stefanini-challenge/webapi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/micaelfernandes/.nuget/NuGet/NuGet.Config"

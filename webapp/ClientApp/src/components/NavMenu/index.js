@@ -22,12 +22,13 @@ export class NavMenu extends Component {
     });
   }
 
+
   render () {
     return (
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3"  light>
           <Container>
-            <NavbarBrand className="nav-bar-menu"  tag={Link} to="/">
+            <NavbarBrand className="nav-bar-menu"  id="nav-bar" tag={Link} to="/">
              <img src={landingImgStefanini} alt="Stefanini" />
             </NavbarBrand>
            

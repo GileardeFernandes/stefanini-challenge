@@ -14,14 +14,14 @@ namespace webapi.Utils
             if( DateTime.Now == people.BirthDate ||  people.BirthDate  > DateTime.Now )
                  return new ValidationResult("Da de aniversário não pode ser hoje nem datas futuras");   
       
-            var data = DateTime.Today.Year - people.BirthDate.Year;  
+            // var data = DateTime.Today.Year - people.BirthDate.Year;  
 
-             if (data > 150)
-                 return new ValidationResult("Verificar data de aniversário, máxima idade 150 anos");   
+            //  if (data > 150)
+            //      return new ValidationResult("Verificar data de aniversário, máxima idade 150 anos");   
             
 
-            if (data < 1 ) 
-                  return new ValidationResult("Verificar data de aniversário, idade  mínima 1 ano"); 
+            // if (data < 1 ) 
+            //       return new ValidationResult("Verificar data de aniversário, idade  mínima 1 ano"); 
 
               return  ValidationResult.Success ;
         }  

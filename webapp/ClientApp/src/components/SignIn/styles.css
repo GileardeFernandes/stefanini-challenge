@@ -1,9 +1,9 @@
-.container-register {
+.container-register-signin {
   width: 100vh;
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 

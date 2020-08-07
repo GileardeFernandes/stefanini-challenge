@@ -18,7 +18,7 @@ export class SignUp extends Component {
     event.preventDefault();
      api.post('v1/users',this.state).then(response => {
         alert('Usuário cadastrado, pode fazer login');
-        this.props.history.push('/');
+        this.props.history.push('/signin');
     }).catch(x => {
       alert("Não foi possível cadastra usuário, tente mais tarde !!");
     })
