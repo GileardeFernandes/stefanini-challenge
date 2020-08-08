@@ -34,8 +34,9 @@ Agora caso queira, pode consumir a API utilizando o Postman, Isominia ou outro d
 
 ## User/endpoints
 
-<h3>Get</h3> https://localhost:5001/v1/users?email=micaelsantana2009@hotmail.com&password=123456
-Resultado
+<h3>Get</h3> 
+https://localhost:5001/v1/users?email=micaelsantana2009@hotmail.com&password=123456
+
 ```json
 {
     "id": 1,
