@@ -14,23 +14,24 @@
 |<a href="https://www.postman.com/">Postman</a>      |
 
 
-Primeiramente abra seu ternimal com o git instalado e clone o projeto
+Primeiramente abra seu terminal com o git instalado e clone o projeto
 
 ```sh
 git clone https://github.com/GileardeFernandes/stefanini-challenge.git
 ```
-Vamos começar dando start em nossa API, navegue ate apasta webapi e rode os comandos abaixo
+Vamos começar dando start em nossa API, navegue ate a pasta webapi e rode os comandos abaixo
 
 ```sh
 cd webapi
 dotnet run
 ```
 Esse será seu resultado no terminal, a API estará rodando em https://localhost:5001
+<img align='center' src="https://github.com/GileardeFernandes/stefanini-challenge/blob/master/assets/log-api.png" >
 
 
 
 
-Agora caso queira, pode consumir a API utilizando o Postman, Isominia ou outro de sua preferência ulizando os seguintes endpoints:
+Agora caso queira, pode consumir a API utilizando o Postman, Isominia ou outro de sua preferência utilizando os seguintes endpoints:
 
 ## User/endpoints
 
@@ -135,7 +136,8 @@ cd webapp
 dotnet run
 ```
 
-se tudo der certo, você o seguinte log abaixo em seu terminal e podera acessar a applicação em https://localhost:5002.
+se tudo der certo, você o seguinte log abaixo em seu terminal e poderá acessar a aplicação em https://localhost:5002.
+<img align='center' src="https://github.com/GileardeFernandes/stefanini-challenge/blob/master/assets/log-appweb.png" >
 
 
 
