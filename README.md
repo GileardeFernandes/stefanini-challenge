@@ -125,6 +125,17 @@ url: /v1/people?id=1
 
 
 
+## Inicindo aplicação WEB
+
+Agora já podemos dar start em nossa aplicação WEB, para isso vamos executar o seguinte comando em seu terminal:
+
+
+```sh
+cd webapp
+dotnet run
+```
+
+se tudo der certo, você o seguinte log abaixo em seu terminal e podera acessar a applicação em https://localhost:5002.
 
 
 
