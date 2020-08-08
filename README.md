@@ -5,7 +5,7 @@
 <img align='right' src="https://github.com/GileardeFernandes/stefanini-challenge/blob/master/assets/home-web.png" >
 
 
-##instalação
+## instalação
 
 | Ferramentas ambiente                               |
 | ---------------------------------------------------|
