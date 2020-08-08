@@ -55,7 +55,7 @@ export class SignUp extends Component {
             <button type="submit">Cadastrar</button>
           </form>
 
-          <Link  className="link-go-back"  to="/">Voltar para login</Link>
+          <Link  className="link-go-back"  to="/">Voltar para Home</Link>
         </div>
       </div>
     )

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
-import signUpAnimation from '../../assets/images/signup-animation.gif';
+import signInAnimation from '../../assets/images/login-animation.gif';
 import './styles.css'
 export class SignIn extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ export class SignIn extends Component {
     return (
       <div className="container-register-signin">
 
-        <img src={signUpAnimation} className="logo" alt="SignIn" />
+        <img src={signInAnimation} className="logo" alt="SignIn" />
   
         <div className="content-register">
           <form className="form-content" onSubmit={this.handleLogin}>
