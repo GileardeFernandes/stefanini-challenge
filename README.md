@@ -35,17 +35,98 @@ Agora caso queira, pode consumir a API utilizando o Postman, Isominia ou outro d
 ## User/endpoints
 
 <h3>Get</h3> 
-/v1/users?email=micaelsantana2009@hotmail.com&password=123456
+url: /v1/users?email=micaelsantana2009@hotmail.com&password=123456
 
 ```json
 {
     "id": 1,
     "name": "Micael Fernandes",
     "email": "micaelsantana2009@hotmail.com"
-}```
+}
+```
+
+<h3>Post</h3> 
+url: /v1/users
+
+```json
+Body
+{
+    "name": "Micael Fernandes",
+    "email": "micaelsantana2009@hotmail.com",
+    "password": "123456"
+}
+```
+
+## People/endpoints
+
+<h3>Get</h3>
+url: /v1/people
+
+```json
+[
+    {
+        "id": 1,
+        "name": "Isabella naves costa",
+        "gender": "Feminino",
+        "email": "micaelsantana2009@hotmail.com",
+        "birthDate": "1990-09-06T03:00:00Z",
+        "nationality": "Brasileiro",
+        "naturalness": "Pernambuco",
+        "cpf": "09933622498",
+        "createDate": "2020-08-08T17:20:48.3220289-03:00",
+        "lastUpdateDate": "2020-08-08T17:20:48.3220423-03:00",
+        "userId": 1,
+        "user": {
+            "id": 1,
+            "name": "Micael Fernandes",
+            "email": "micaelsantana2009@hotmail.com",
+            "password": "123456"
+        }
+    }
+]
+```
+
+<h3>Post</h3>
+url: /v1/people
+
+```json
+{
+    "Name": "Micael Fernandes",
+    "Gender": "M",
+    "Email": "micaelsantana2009@hotmail.com",
+    "BirthDate": "1990-09-06T03:00:00Z",
+    "Nationality": "Brasileiro",
+    "Naturalness": "Pernambuco",
+    "Cpf": "09933622498",
+    "UserId": 1
+
+}
+```
+
+<h3>Put</h3>
+url: /v1/people?id=1
+
+```json
+{
+    "Name": "Isabella naves costa",
+    "Gender": "Feminino",
+    "Email": "micaelsantana2009@hotmail.com",
+    "BirthDate": "1990-09-06T03:00:00Z",
+    "Nationality": "Brasileiro",
+    "Naturalness": "Pernambuco",
+    "Cpf": "09933622498",
+    "UserId": 1
+
+}
+```
+
+<h3>Delete</h3>
+url: /v1/people?id=1
 
 
-dça,fldçamfdafdas
+
+
+
 
 
 
