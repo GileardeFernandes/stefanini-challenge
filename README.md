@@ -31,7 +31,7 @@ Esse será seu resultado no terminal, a API estará rodando em https://localhost
 
 
 
-Agora caso queira, pode consumir a API utilizando o Postman, Isominia ou outro de sua preferência utilizando os seguintes endpoints:
+Agora caso queira, pode consumir a API utilizando o Postman, Isomnia ou outro de sua preferência utilizando os seguintes endpoints:
 
 ## User/endpoints
 
