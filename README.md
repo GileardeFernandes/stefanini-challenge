@@ -4,3 +4,13 @@
 
 <img align='right' src="https://github.com/GileardeFernandes/stefanini-challenge/blob/master/assets/home-web.png" >
 
+
+##instalação
+
+| Ferramentas ambiente                               |
+| ---------------------------------------------------|
+|<a href="https://git-scm.com/">Git</a>              |
+|<a href="https://code.visualstudio.com/">Vs Code</a>|
+|<a href="https://www.postman.com/">Postman</a>      |
+
+
