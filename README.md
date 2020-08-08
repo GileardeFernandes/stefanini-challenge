@@ -29,3 +29,23 @@ Esse será seu resultado no terminal, a API estará rodando em https://localhost
 
 
 
+
+Agora caso queira, pode consumir a API utilizando o Postman, Isominia ou outro de sua preferência ulizando os seguintes endpoints:
+
+## User/endpoints
+
+<h3>Get</h3> https://localhost:5001/v1/users?email=micaelsantana2009@hotmail.com&password=123456
+Resultado
+```json
+{
+    "id": 1,
+    "name": "Micael Fernandes",
+    "email": "micaelsantana2009@hotmail.com",
+    "password": "123456"
+}
+`;
+
+
+
+
+
