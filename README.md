@@ -140,6 +140,9 @@ se tudo der certo, você o seguinte log abaixo em seu terminal e poderá acessar
 <img align='center' src="https://github.com/GileardeFernandes/stefanini-challenge/blob/master/assets/log-appweb.png" >
 
 
+Terminamos 🚀 :wave:
+
+
 
 
 
