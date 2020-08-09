@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import swal from 'sweetalert';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 import signUpAnimation from '../../assets/images/signup-animation.gif';
@@ -17,11 +18,11 @@ export class SignUp extends Component {
     handleRegisterUser(event){
     event.preventDefault();
      api.post('v1/users',this.state).then(response => {
-        alert('Usuário cadastrado, pode fazer login');
+       swal('Usuário cadastrado, pode fazer login','','success');
         this.props.history.push('/signin');
     }).catch(x => {
-      alert("Não foi possível cadastra usuário, tente mais tarde !!");
-    })
+      swal('Não foi possível cadastra usuário, tente mais tarde !!','','error');
+    });
   }
   render() {
     return (

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import swal from 'sweetalert';
 import api from '../../services/api';
 import {format} from 'date-fns';
 import './styles.css'
@@ -31,10 +32,12 @@ export class Dashboard extends Component {
   handleRegisterPeople(event){
     event.preventDefault();
 
-    var date = this.state.birthDate;
-    var dateArray = date.split("/");
-    var newDate = dateArray[1] + '/' + dateArray[0] + '/' + dateArray[2];
-    console.log(newDate);
+    let date = this.state.birthDate;
+    let dateArray = date.split("/");
+    let newDate = dateArray[1] + '/' + dateArray[0] + '/' + dateArray[2];
+    
+    let idUser = localStorage.getItem('@id');
+   
 
     const  newPeople = {
       name: this.state.name,
@@ -44,7 +47,7 @@ export class Dashboard extends Component {
       naturalness: this.state.naturalness,
       birthDate: new Date(newDate),
       cpf: this.state.cpf,
-      userId: 1
+      userId: Number(idUser)
     }
 
      if (this.state.actionEdit){
@@ -58,8 +61,7 @@ export class Dashboard extends Component {
           this.resetFormaData();
         })
         .catch(x => {
-          console.log(x);
-          alert("Não foi possível atualizar dados, tente mais tarde !!");
+          swal('Não foi possível atualizar dados, tente mais tarde !!','','error');
         });
 
      }
@@ -68,8 +70,7 @@ export class Dashboard extends Component {
           this.setState({people:[...this.state.people, response.data]});
           this.resetFormaData();
         }).catch(x => {
-          console.log(x);
-          alert("Não foi possível cadastra usuário, tente mais tarde !!");
+          swal('Não foi possível cadastra usuário, tente mais tarde !!','','error');
         });
      }
   }
@@ -116,8 +117,7 @@ export class Dashboard extends Component {
 
     })
     .catch(x => {
-      console.log(x);
-      alert("Não foi possível atualizar dados, tente mais tarde !!");
+      swal('Não foi possível atualizar dados, tente mais tarde !!','','error');
     });
   }
 
@@ -137,6 +137,7 @@ export class Dashboard extends Component {
   handleLogout(event){
     event.preventDefault();
     localStorage.removeItem('@email');
+    localStorage.removeItem('@id');
     this.props.history.push('/');
   }
 

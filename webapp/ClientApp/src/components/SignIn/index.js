@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 import api from '../../services/api';
 import signInAnimation from '../../assets/images/login-animation.gif';
 import './styles.css'
 export class SignIn extends Component {
   constructor(props) {
     super(props);
-    this.state = {email: 'micaelsantana2009@hotmail.com', password: '123456'};
-     this.handleLogin = this.handleLogin.bind(this);
+    this.state = {email: '', password: ''};
+    this.handleLogin = this.handleLogin.bind(this);
   }
 
   handleLogin(event) {
     event.preventDefault();
     api.get('v1/users', {  params: { email: this.state.email, password: this.state.password}})  
        .then(response => {     
-              localStorage.setItem('@email',this.state.email);
+              localStorage.setItem('@email',response.data.email);
+              localStorage.setItem('@id',response.data.id);
+
               this.props.history.push('/dashboard'); })
        .catch(x => {
-            console.log(x);
-            alert("Não foi possível cadastra usuário, tente mais tarde !!");
+            swal('Usuário e senha inválidos!!','','info');
         })
   }
   render() {
