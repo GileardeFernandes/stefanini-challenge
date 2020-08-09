@@ -129,8 +129,14 @@ url: /v1/people?id=1
 
 ## Inicindo aplicação WEB
 
-Agora já podemos dar start em nossa aplicação WEB, para isso vamos executar o seguinte comando em seu terminal:
+Agora já podemos dar start em nossa aplicação WEB, para isso, vamos executar o seguinte comando em seu terminal para garantir que todas as dependências sejam instaladas.
 
+```sh
+cd webapp/ClientApp 
+npm install
+```
+
+Muito bem, agora finalmente podemos dar start em nossa aplicação.
 
 ```sh
 cd webapp
