@@ -34,6 +34,8 @@ Esse será seu resultado no terminal, a API estará rodando em https://localhost
 Agora caso queira, pode consumir a API utilizando o Postman, Isomnia ou outro de sua preferência utilizando os seguintes endpoints:
 Você também pode acessar a documentação dos endpoints no postman nesse link: https://documenter.getpostman.com/view/2533857/T1LJk8t3
 
+Nessa API utilizaremos o Entity Framework Core InMemory para armazenar os dados da nossa aplicação.
+
 ## User/endpoints
 
 <h3>Get</h3> 
